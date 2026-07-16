@@ -1,0 +1,183 @@
+<!-- =========================================================
+     TEST HANDOFF EMAIL — OUTLOOK-HARDENED VERSION
+     - Solid color fallback behind the gradient header
+       (so white text stays visible in Outlook desktop)
+     - bgcolor + table-cell buttons for reliable rendering
+     - Rounded corners degrade to square corners in Outlook
+       desktop (harmless), stay rounded elsewhere.
+     Usage: open in a browser, copy all, paste into your
+     mail client, or send as HTML. Fill in [...] placeholders.
+     ========================================================= -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="#f4f5f7" style="background-color:#f4f5f7;margin:0;padding:24px 0;font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <tr>
+    <td align="center">
+
+      <!-- CARD -->
+      <table role="presentation" width="620" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="width:620px;max-width:100%;background-color:#ffffff;border-radius:14px;overflow:hidden;box-shadow:0 1px 3px rgba(16,24,40,0.1);">
+
+        <!-- HEADER BAND (solid #4f46e5 fallback + gradient for modern clients) -->
+        <tr>
+          <td bgcolor="#4f46e5" style="background-color:#4f46e5;background-image:linear-gradient(135deg,#4f46e5 0%,#7c3aed 100%);padding:28px 32px;">
+            <div style="font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:#c7d2fe;font-weight:600;margin-bottom:6px;">
+              Test Handoff &nbsp;•&nbsp; Development Completed
+            </div>
+            <div style="font-size:24px;line-height:1.3;color:#ffffff;font-weight:700;">
+              [Project Name] — [Version / Build No]
+            </div>
+          </td>
+        </tr>
+
+        <!-- BODY -->
+        <tr>
+          <td style="padding:32px;">
+
+            <p style="margin:0 0 16px;font-size:15px;line-height:1.6;color:#101828;">
+              Hi [Team / Name],
+            </p>
+
+            <p style="margin:0 0 24px;font-size:15px;line-height:1.6;color:#475467;">
+              The <strong style="color:#101828;">[Version / Build No]</strong> package for
+              <strong style="color:#101828;">[Project Name]</strong> has completed development and is now
+              deployed to the test environment. Below you'll find a summary of what's included, the list of
+              fixed bugs, and the links you need to start testing.
+            </p>
+
+            <!-- SUMMARY BOX -->
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="#f8f9fc" style="margin:0 0 28px;background-color:#f8f9fc;border:1px solid #eaecf0;border-radius:10px;">
+              <tr>
+                <td style="padding:18px 20px;">
+                  <div style="font-size:12px;letter-spacing:0.5px;text-transform:uppercase;color:#667085;font-weight:700;margin-bottom:10px;">
+                    What's in this build?
+                  </div>
+                  <ul style="margin:0;padding-left:20px;font-size:14px;line-height:1.7;color:#344054;">
+                    <li>[Short description 1]</li>
+                    <li>[Short description 2]</li>
+                    <li>[Short description 3]</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+
+            <!-- BUG TABLE TITLE -->
+            <div style="font-size:12px;letter-spacing:0.5px;text-transform:uppercase;color:#667085;font-weight:700;margin-bottom:12px;">
+              Fixed Bugs
+            </div>
+
+            <!-- BUG TABLE -->
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border:1px solid #eaecf0;border-radius:10px;overflow:hidden;margin:0 0 28px;">
+              <!-- Table header -->
+              <tr>
+                <th align="left"  bgcolor="#f2f4f7" style="background-color:#f2f4f7;padding:10px 12px;font-size:11px;color:#475467;font-weight:700;border-bottom:1px solid #eaecf0;">ID</th>
+                <th align="left"  bgcolor="#f2f4f7" style="background-color:#f2f4f7;padding:10px 12px;font-size:11px;color:#475467;font-weight:700;border-bottom:1px solid #eaecf0;">Description</th>
+                <th align="center" bgcolor="#f2f4f7" style="background-color:#f2f4f7;padding:10px 12px;font-size:11px;color:#475467;font-weight:700;border-bottom:1px solid #eaecf0;">Priority</th>
+                <th align="center" bgcolor="#f2f4f7" style="background-color:#f2f4f7;padding:10px 12px;font-size:11px;color:#475467;font-weight:700;border-bottom:1px solid #eaecf0;">Status</th>
+                <th align="left"  bgcolor="#f2f4f7" style="background-color:#f2f4f7;padding:10px 12px;font-size:11px;color:#475467;font-weight:700;border-bottom:1px solid #eaecf0;">Developer</th>
+                <th align="left"  bgcolor="#f2f4f7" style="background-color:#f2f4f7;padding:10px 12px;font-size:11px;color:#475467;font-weight:700;border-bottom:1px solid #eaecf0;">Tester</th>
+              </tr>
+
+              <!-- Row 1 — CRITICAL -->
+              <tr>
+                <td style="padding:12px;font-size:13px;color:#101828;font-weight:600;border-bottom:1px solid #f2f4f7;">BUG-001</td>
+                <td style="padding:12px;font-size:13px;color:#344054;border-bottom:1px solid #f2f4f7;">[Short summary]</td>
+                <td align="center" style="padding:12px;border-bottom:1px solid #f2f4f7;">
+                  <span style="display:inline-block;background-color:#fee4e2;color:#b42318;font-size:12px;font-weight:700;padding:4px 10px;border-radius:20px;">Critical</span>
+                </td>
+                <td align="center" style="padding:12px;border-bottom:1px solid #f2f4f7;">
+                  <span style="display:inline-block;background-color:#dcfae6;color:#067647;font-size:12px;font-weight:700;padding:4px 10px;border-radius:20px;">Fixed</span>
+                </td>
+                <td style="padding:12px;font-size:13px;color:#344054;border-bottom:1px solid #f2f4f7;">[Dev Name]</td>
+                <td style="padding:12px;font-size:13px;color:#344054;border-bottom:1px solid #f2f4f7;">[Tester Name]</td>
+              </tr>
+
+              <!-- Row 2 — HIGH -->
+              <tr>
+                <td style="padding:12px;font-size:13px;color:#101828;font-weight:600;border-bottom:1px solid #f2f4f7;">BUG-002</td>
+                <td style="padding:12px;font-size:13px;color:#344054;border-bottom:1px solid #f2f4f7;">[Short summary]</td>
+                <td align="center" style="padding:12px;border-bottom:1px solid #f2f4f7;">
+                  <span style="display:inline-block;background-color:#fef0c7;color:#b54708;font-size:12px;font-weight:700;padding:4px 10px;border-radius:20px;">High</span>
+                </td>
+                <td align="center" style="padding:12px;border-bottom:1px solid #f2f4f7;">
+                  <span style="display:inline-block;background-color:#dcfae6;color:#067647;font-size:12px;font-weight:700;padding:4px 10px;border-radius:20px;">Fixed</span>
+                </td>
+                <td style="padding:12px;font-size:13px;color:#344054;border-bottom:1px solid #f2f4f7;">[Dev Name]</td>
+                <td style="padding:12px;font-size:13px;color:#344054;border-bottom:1px solid #f2f4f7;">[Tester Name]</td>
+              </tr>
+
+              <!-- Row 3 — MEDIUM -->
+              <tr>
+                <td style="padding:12px;font-size:13px;color:#101828;font-weight:600;border-bottom:1px solid #f2f4f7;">BUG-003</td>
+                <td style="padding:12px;font-size:13px;color:#344054;border-bottom:1px solid #f2f4f7;">[Short summary]</td>
+                <td align="center" style="padding:12px;border-bottom:1px solid #f2f4f7;">
+                  <span style="display:inline-block;background-color:#dbeafe;color:#1849a9;font-size:12px;font-weight:700;padding:4px 10px;border-radius:20px;">Medium</span>
+                </td>
+                <td align="center" style="padding:12px;border-bottom:1px solid #f2f4f7;">
+                  <span style="display:inline-block;background-color:#dcfae6;color:#067647;font-size:12px;font-weight:700;padding:4px 10px;border-radius:20px;">Fixed</span>
+                </td>
+                <td style="padding:12px;font-size:13px;color:#344054;border-bottom:1px solid #f2f4f7;">[Dev Name]</td>
+                <td style="padding:12px;font-size:13px;color:#344054;border-bottom:1px solid #f2f4f7;">[Tester Name]</td>
+              </tr>
+
+              <!-- Row 4 — LOW -->
+              <tr>
+                <td style="padding:12px;font-size:13px;color:#101828;font-weight:600;">BUG-004</td>
+                <td style="padding:12px;font-size:13px;color:#344054;">[Short summary]</td>
+                <td align="center" style="padding:12px;">
+                  <span style="display:inline-block;background-color:#e4e7ec;color:#475467;font-size:12px;font-weight:700;padding:4px 10px;border-radius:20px;">Low</span>
+                </td>
+                <td align="center" style="padding:12px;">
+                  <span style="display:inline-block;background-color:#dcfae6;color:#067647;font-size:12px;font-weight:700;padding:4px 10px;border-radius:20px;">Fixed</span>
+                </td>
+                <td style="padding:12px;font-size:13px;color:#344054;">[Dev Name]</td>
+                <td style="padding:12px;font-size:13px;color:#344054;">[Tester Name]</td>
+              </tr>
+            </table>
+
+            <!-- LINKS (bgcolor on the cell = reliable button color in Outlook) -->
+            <table role="presentation" cellpadding="0" cellspacing="0" style="margin:0 0 12px;">
+              <tr>
+                <td bgcolor="#4f46e5" style="background-color:#4f46e5;border-radius:8px;">
+                  <a href="[ENVIRONMENT_LINK]" style="display:inline-block;color:#ffffff;font-size:14px;font-weight:600;text-decoration:none;padding:12px 22px;">
+                    &#8594; Open Test Environment
+                  </a>
+                </td>
+              </tr>
+            </table>
+            <table role="presentation" cellpadding="0" cellspacing="0" style="margin:0 0 28px;">
+              <tr>
+                <td bgcolor="#ffffff" style="background-color:#ffffff;border-radius:8px;border:1px solid #c7d2fe;">
+                  <a href="[BUG_TRACKER_LINK]" style="display:inline-block;color:#4f46e5;font-size:14px;font-weight:600;text-decoration:none;padding:12px 22px;">
+                    &#8594; Open Bug List / Tracker
+                  </a>
+                </td>
+              </tr>
+            </table>
+
+            <p style="margin:0 0 8px;font-size:14px;line-height:1.6;color:#475467;">
+              If you run into any issues during testing, please leave a comment on the relevant bug ticket
+              or reach out to me directly. It would be great if you could share the test results by
+              <strong style="color:#101828;">[date]</strong>.
+            </p>
+
+            <p style="margin:24px 0 0;font-size:15px;line-height:1.6;color:#101828;">
+              Best regards,<br>
+              <strong>[Name]</strong>
+            </p>
+
+          </td>
+        </tr>
+
+        <!-- FOOTER BAND -->
+        <tr>
+          <td bgcolor="#f8f9fc" style="background-color:#f8f9fc;padding:16px 32px;border-top:1px solid #eaecf0;">
+            <div style="font-size:12px;color:#98a2b3;line-height:1.5;">
+              This email was sent by the [Project Name] development team for a test handoff.
+            </div>
+          </td>
+        </tr>
+
+      </table>
+      <!-- /CARD -->
+
+    </td>
+  </tr>
+</table>
